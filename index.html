@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/1c32b68933.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mobile.css">
   <title>Studiohatna</title>
   <link rel="icon" sizes="48x48" type="image/png" href="/imgs/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,24 +24,67 @@
 
 
 </head>
+<div id="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<script>
+  window.onload = function () {
+    setTimeout(function () {
+      document.getElementById("spinner").style.display = "none";
+    }, 1000); // 5 seconds
+
+    // if(document.getElementById("categories")){
+    //   document.getElementById("spinner").style.display = "inline-block";
+
+    // }
+  }
+</script>
 
 <body>
   <!-- header & Nav -->
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <a href="/index.html " class="no-border">
-          <img src="/imgs/LastLogo.png" alt="studioHatna logo" width="300px">
-        </a>
+      <div class="small-screen">
+        <div class="logo">
+          <a href="/index.html " class="">
+            <img src="/imgs/lastsmalllogo.png" alt="studioHatna logo" width="50px">
+          </a>
+        </div>
+  
+        <div class="menue-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menue">
+            <nav class="navbar">
+              <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+              <a href="#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+              <a href="#services" class="services border"><span class="S-color">S</span>ervices</a>
+              <a href="about.html" class="about border">About</a>
+              <a href="#links" class="contact border">links</span></a>
+              <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+            </nav>
+          </div>
+    
+        </div>
+  
+    
       </div>
-      <nav class="navbar">
-        <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
-        <a href="#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
-        <a href="#services" class="services border"><span class="S-color">S</span>ervices</a>
-        <a href="about.html" class="about">About</a>
-        <a href="#links" class="contact border">links</span></a>
-        <a href="contact.html" class="contact border">Contac<span class="T-color">t</span></a>
-      </nav>
+
+      <div class="Menue">
+        <nav class="navbar">
+          <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+          <a href="#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+          <a href="#services" class="services border"><span class="S-color">S</span>ervices</a>
+          <a href="about.html" class="about border">About</a>
+          <a href="#links" class="contact border">links</span></a>
+          <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+        </nav>
+      </div>
+
+
+
     </div>
   </header>
 
@@ -72,223 +116,233 @@
 
 
     <!-- Photography Categories -->
-    <section class="categories" id="categories">
-      <div class="container">
-
-        <a class="a-1 a-decoration" href="/imgs/Food.JPG" data-lightbox="categories"
-          data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, consequatur?">
-          <div class="img-box img-1">food</div>
-        </a>
-
-        <a class="a-2 a-decoration" href="/imgs/cinema.jpg" data-lightbox="categories">
-          <div class="img-box img-2">cinema</div>
-        </a>
-
-        <a class="a-3 a-decoration" href="/imgs/Wedding.png" data-lightbox="categories">
-          <div class="img-box img-3">weddings</div>
-        </a>
-
-        <a class="a-4 a-decoration" href="/imgs/still.jpg" data-lightbox="categories">
-          <div class="img-box img-4">Kids</div>
-        </a>
-
-        <a class="a-5 a-decoration" href="/imgs/events.jpg" data-lightbox="categories">
-          <div class="img-box img-5">events</div>
-        </a>
-
-        <a class="a-6 a-decoration" href="/imgs/comercial.png" data-lightbox="categories">
-          <div class="img-box img-6">comercial</div>
-        </a>
-
-        <a class="a-7 a-decoration" href="/imgs/cars.jpg" data-lightbox="categories">
-          <div class="img-box img-7">cars photoshot</div>
-        </a>
-
-        <a class="a-8 a-decoration" href="/imgs/logo-design.jpg" data-lightbox="categories">
-          <div class="img-box img-8">createDesign</div>
-        </a>
-
-        <a class="a-9 a-decoration" href="/imgs/Real-estate.JPG" data-lightbox="categories">
-          <div class="img-box img-9">real estate</div>
-        </a>
-
-      </div>
-    </section>
+    <div class="background">
 
 
 
-    <!-- Our services  -->
-    <section class="services" id="services">
-      <div class="container">
-        <div class="part-1 article orange">
-          <div class="img-part">
-            <img src="/imgs/Food.JPG" alt="" width="1">
+      <section class="categories" id="categories">
+        <div class="container">
+
+          <a class="a-1 a-decoration" href="/imgs/Food.JPG" data-lightbox="categories"
+            data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, consequatur?">
+            <div class="img-box img-1">food</div>
+          </a>
+
+          <a class="a-2 a-decoration" href="/imgs/cinema.jpg" data-lightbox="categories">
+            <div class="img-box img-2">cinema</div>
+          </a>
+
+          <a class="a-3 a-decoration" href="/imgs/Wedding.png" data-lightbox="categories">
+            <div class="img-box img-3">weddings</div>
+          </a>
+
+          <a class="a-4 a-decoration" href="/imgs/still.jpg" data-lightbox="categories">
+            <div class="img-box img-4">Kids</div>
+          </a>
+
+          <a class="a-5 a-decoration" href="/imgs/events.jpg" data-lightbox="categories">
+            <div class="img-box img-5">events</div>
+          </a>
+
+          <a class="a-6 a-decoration" href="/imgs/comercial.png" data-lightbox="categories">
+            <div class="img-box img-6">comercial</div>
+          </a>
+
+          <a class="a-7 a-decoration" href="/imgs/cars.jpg" data-lightbox="categories">
+            <div class="img-box img-7">cars photoshot</div>
+          </a>
+
+          <a class="a-8 a-decoration" href="/imgs/logo-design.jpg" data-lightbox="categories">
+            <div class="img-box img-8">createDesign</div>
+          </a>
+
+          <a class="a-9 a-decoration" href="/imgs/Real-estate.JPG" data-lightbox="categories">
+            <div class="img-box img-9">real estate</div>
+          </a>
+
+        </div>
+      </section>
+
+
+
+      <!-- Our services  -->
+      <section class="services" id="services">
+        <div class="container">
+
+          <div class="part-1 article orange">
+            <div class="container2">
+              <div class="img-part">
+                <img src="/imgs/Food.JPG" alt="" width="1">
+              </div>
+              <div class="paragraph ">
+                <h1>Food</h1>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                </ul>
+                <div>
+                  <button>Read More</button>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <div class="paragraph ">
-            <h1>Food</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+
+
+
+          <div class="part-2 article  red reverse">
+            <div class="img-part">
+              <img src="/imgs/cinema.jpg" alt="" width="1">
+            </div>
+            <div class="paragraph ">
+              <h1>Cinema</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="part-3 article orange">
+            <div class="img-part">
+              <img src="/imgs/Wedding.png" alt="" width="1">
+            </div>
+            <div class="paragraph">
+              <h1>Weddings</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
+
             </div>
 
           </div>
-        </div>
-        <div class="part-2 article  red">
-          <div class="img-part">
-            <img src="/imgs/cinema.jpg" alt="" width="1">
-          </div>
-          <div class="paragraph paragraph-reverse">
-            <h1>Cinema</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+          <div class="part-4 article red reverse">
+            <div class="img-part">
+              <img src="/imgs/comercial.png" alt="" width="1">
+            </div>
+            <div class="paragraph paragraph-reverse">
+              <h1>Comercial</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
+
             </div>
 
           </div>
-        </div>
-        <div class="part-3 article orange">
-          <div class="img-part">
-            <img src="/imgs/Wedding.png" alt="" width="1">
-          </div>
-          <div class="paragraph">
-            <h1>Weddings</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+          <div class="part-5 article orange ">
+            <div class="img-part">
+              <img src="/imgs/cars.jpg" alt="" width="1">
+            </div>
+            <div class="paragraph">
+              <h1>Cars</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
+
             </div>
 
           </div>
+          <div class="part-6 article red reverse">
+            <div class="img-part">
+              <img src="/imgs/Real-estate.JPG" alt="" width="1">
+            </div>
+            <div class="paragraph paragraph-reverse">
+              <h1>Real Estate</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
 
-        </div>
-        <div class="part-4 article red">
-          <div class="img-part">
-            <img src="/imgs/comercial.png" alt="" width="1">
+            </div>
           </div>
-          <div class="paragraph paragraph-reverse">
-            <h1>Comercial</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+          <div class="part-7 article orange ">
+            <div class="img-part">
+              <img src="/imgs/events.jpg" alt="" width="1">
+            </div>
+            <div class="paragraph ">
+              <h1>Events</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
+
             </div>
 
           </div>
-
-        </div>
-        <div class="part-5 article orange">
-          <div class="img-part">
-            <img src="/imgs/cars.jpg" alt="" width="1">
-          </div>
-          <div class="paragraph">
-            <h1>Cars</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+          <div class="part-8 article red reverse">
+            <div class="img-part">
+              <img src="/imgs/logo-design.jpg" alt="" width="1">
             </div>
+            <div class="paragraph paragraph-reverse">
+              <h1>create Design</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
 
-          </div>
-
-        </div>
-        <div class="part-6 article red">
-          <div class="img-part">
-            <img src="/imgs/Real-estate.JPG" alt="" width="1">
-          </div>
-          <div class="paragraph paragraph-reverse">
-            <h1>Real Estate</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
             </div>
-
           </div>
-        </div>
-        <div class="part-7 article orange">
-          <div class="img-part">
-            <img src="/imgs/events.jpg" alt="" width="1">
-          </div>
-          <div class="paragraph paragraph-reverse">
-            <h1>Events</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
+          <div class="part-9 article orange ">
+            <div class="img-part">
+              <img src="/imgs/still.jpg" alt="" width="1">
             </div>
+            <div class="paragraph ">
+              <h1>Kids</h1>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
+              </ul>
+              <div>
+                <button>Read More</button>
+              </div>
 
-          </div>
-
-        </div>
-        <div class="part-8 article red">
-          <div class="img-part">
-            <img src="/imgs/logo-design.jpg" alt="" width="1">
-          </div>
-          <div class="paragraph">
-            <h1>create Design</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
             </div>
-
           </div>
+
         </div>
-        <div class="part-9 article orange">
-          <div class="img-part">
-            <img src="/imgs/still.jpg" alt="" width="1">
-          </div>
-          <div class="paragraph paragraph-reverse">
-            <h1>Kids</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus.</li>
-            </ul>
-            <div>
-              <button>Read More</button>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
+      </section>
 
 
 

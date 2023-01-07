@@ -23,100 +23,126 @@
   <link rel="stylesheet" href="/css/lightbox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Staatliches&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="/css/mobile.css">
+
 
 
 </head>
+<div id="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById("spinner").style.display = "none";
+    }, 1000); // 5 seconds
+  }
+</script>
 
 <body>
-  <!-- header & Nav -->
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <a href="/index.html" class=" no-border">
-          <img src="/imgs/LastLogo.png" alt="studioHatna logo" width="300px">
-        </a>
+      <div class="small-screen">
+        <div class="logo">
+          <a href="/index.html " class="">
+            <img src="/imgs/lastsmalllogo.png" alt="studioHatna logo" width="50px">
+          </a>
+        </div>
+  
+        <div class="menue-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menue">
+            <nav class="navbar">
+              <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+              <a href="/index.html#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+              <a href="/index.html#services" class="services border"><span class="S-color">S</span>ervices</a>
+              <a href="about.html" class="about border">About</a>
+              <a href="/index.html#links" class="contact border">links</span></a>
+              <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+            </nav>
+          </div>
+    
+        </div>
+  
+    
       </div>
-      <nav class="navbar">
-        <a href="/index.html" class="  border"><span class="H-color">H</span>ome</a>
-        <a href="/index.html#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
-        <a href="/index.html#services" class="services border"><span class="S-color">S</span>ervices</a>
-        <a href="about.html" class=" current about">About</a>
-        <a href="/index.html#links" class="contact border">links</span></a>
-        <a href="contact.html" class="contact border">Contac<span class="T-color">t</span></a>
-      </nav>
+
+      <div class="Menue">
+        <nav class="navbar">
+          <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+          <a href="/index.html#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+          <a href="/index.html#services" class="services border"><span class="S-color">S</span>ervices</a>
+          <a href="about.html" class="about border">About</a>
+          <a href="/index.html#links" class="contact border">links</span></a>
+          <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+    </nav>
+      </div>
+
+
+
     </div>
   </header>
-
-
 
   <main class="main-about">
     <section class="about-us" id="about-us">
       <div class="container">
-        <img src="/imgs/who-we -are.png" alt="who-we-are.">
+        <h1>Who we are ..?</h1>
       </div>
     </section>
 
     <section class="who-we-are" id="who-we-are">
       <div class="container">
+
         <div class="left-side">
-          <img src="/imgs/about-poster-1.jpg" alt="about-poster-1">
+          <div class="content">
+            <div>
+              <h1>We Are :</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, at. Unde possimus vero eius quos
+                commodi?
+                Provident ex quo, assumenda magni expedita repellendus doloribus corporis ad esse quia atque tempora
+                ipsum,
+                quidem animi at eos placeat. Voluptate adipisci dolorum ex neque fugiat excepturi nesciunt nulla
+                temporibus.
+                Dolorem minus necessitatibus dolorum porro tempore ea eum vitae architecto doloremque blanditiis
+                distinctio,
+                obcaecati unde incidunt aperiam repudiandae laboriosam sapiente consectetur, quas velit eius dolore.
+                Perspiciatis inventore nobis eius harum eligendi quibusdam consequatur ipsum corporis fuga aliquam
+                officiis
+                labore molestiae molestias maxime, nisi voluptates numquam iure nesciunt atque nemo voluptatem repellat?
+                Est,
+                atque modi!</p>
+            </div>
+            <div>
+              <h1>We Are :</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, at. Unde possimus vero eius quos
+                commodi?
+                Provident ex quo, assumenda magni expedita repellendus doloribus corporis ad esse quia atque tempora
+                ipsum,
+                quidem animi at eos placeat. Voluptate adipisci dolorum ex neque fugiat excepturi nesciunt nulla
+                temporibus.
+                Dolorem minus necessitatibus dolorum porro tempore ea eum vitae architecto doloremque blanditiis
+                distinctio,
+                obcaecati unde incidunt aperiam repudiandae laboriosam sapiente consectetur, quas velit eius dolore.
+                Perspiciatis inventore nobis eius harum eligendi quibusdam consequatur ipsum corporis fuga aliquam
+                officiis
+                labore molestiae molestias maxime, nisi voluptates numquam iure nesciunt atque nemo voluptatem repellat?
+                Est,
+                atque modi!</p>
+            </div>
+          </div>
         </div>
-        <div class="right-side">
 
-          <div>
-            <h1>We Are :</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, at. Unde possimus vero eius quos commodi?
-              Provident ex quo, assumenda magni expedita repellendus doloribus corporis ad esse quia atque tempora
-              ipsum,
-              quidem animi at eos placeat. Voluptate adipisci dolorum ex neque fugiat excepturi nesciunt nulla
-              temporibus.
-              Dolorem minus necessitatibus dolorum porro tempore ea eum vitae architecto doloremque blanditiis
-              distinctio,
-              obcaecati unde incidunt aperiam repudiandae laboriosam sapiente consectetur, quas velit eius dolore.
-              Perspiciatis inventore nobis eius harum eligendi quibusdam consequatur ipsum corporis fuga aliquam
-              officiis
-              labore molestiae molestias maxime, nisi voluptates numquam iure nesciunt atque nemo voluptatem repellat?
-              Est,
-              atque modi!</p>
-          </div>
-          <div>
-            <h1>We Are :</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, at. Unde possimus vero eius quos commodi?
-              Provident ex quo, assumenda magni expedita repellendus doloribus corporis ad esse quia atque tempora
-              ipsum,
-              quidem animi at eos placeat. Voluptate adipisci dolorum ex neque fugiat excepturi nesciunt nulla
-              temporibus.
-              Dolorem minus necessitatibus dolorum porro tempore ea eum vitae architecto doloremque blanditiis
-              distinctio,
-              obcaecati unde incidunt aperiam repudiandae laboriosam sapiente consectetur, quas velit eius dolore.
-              Perspiciatis inventore nobis eius harum eligendi quibusdam consequatur ipsum corporis fuga aliquam
-              officiis
-              labore molestiae molestias maxime, nisi voluptates numquam iure nesciunt atque nemo voluptatem repellat?
-              Est,
-              atque modi!</p>
-          </div>
-          <div>
-            <h1>We Are :</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, at. Unde possimus vero eius quos commodi?
-              Provident ex quo, assumenda magni expedita repellendus doloribus corporis ad esse quia atque tempora
-              ipsum,
-              quidem animi at eos placeat. Voluptate adipisci dolorum ex neque fugiat excepturi nesciunt nulla
-              temporibus.
-              Dolorem minus necessitatibus dolorum porro tempore ea eum vitae architecto doloremque blanditiis
-              distinctio,
-              obcaecati unde incidunt aperiam repudiandae laboriosam sapiente consectetur, quas velit eius dolore.
-              Perspiciatis inventore nobis eius harum eligendi quibusdam consequatur ipsum corporis fuga aliquam
-              officiis
-              labore molestiae molestias maxime, nisi voluptates numquam iure nesciunt atque nemo voluptatem repellat?
-              Est,
-              atque modi!</p>
-          </div>
-
+        <div class="right-side ">
+          <img src="/imgs/about-2.jpg" alt="about-poster-2">
         </div>
+
       </div>
     </section>
 
-
+<div></div>
 
     <div class="elfsight-app-bd194e9e-a123-4512-9179-150a947e2814" style="background-color: #333;"></div>
 

@@ -1,0 +1,94 @@
+<style>
+  /* Add some styling to the hamburger menu icon */
+  .menu-dropdown {
+  display: none; /* Hide the dropdown menu by default */
+}
+
+/* Show the dropdown menu when the screen size is under 500px */
+@media screen and (max-width: 500px) {
+  .menu-dropdown {
+    display: block;
+  }
+}
+
+  /* Add the "x" icon that will be displayed when the menu is open */
+  .menu-icon::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+
+  .menu-icon::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin-top: 5px;
+  }
+
+  /* Add the animation to transform the "hamburger" into an "x" */
+  .menu-icon.open::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .menu-icon.open::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  /* Add some styling to the dropdown menu */
+  .menu-dropdown {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-dropdown.open {
+    display: block;
+  }
+
+  .menu-dropdown li {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .menu-dropdown li a {
+    color: #fff;
+    text-decoration: none;
+  }
+</style>
+
+<!-- Create the hamburger menu icon -->
+<div class="menu-icon">
+  <span class="menu-icon__line"></span>
+  <span class="menu-icon__line"></span>
+  <span class="menu-icon__line"></span>
+</div>
+
+<!-- Create the dropdown menu -->
+<ul class="menu-dropdown">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+<script>
+  // Get the hamburger menu icon and the dropdown menu
+  const menuIcon = document.querySelector('.menu-icon');
+  const menuDropdown = document.querySelector('.menu-dropdown');
+
+  // Add a click event listener to the hamburger menu icon
+  menuIcon.addEventListener('click', () => {
+    // Toggle the "open" class on both the menu icon and the dropdown menu
+    menuIcon.classList.toggle('open');
+    menuDropdown.classList.toggle('open');
+  });
+</script>

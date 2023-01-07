@@ -1,0 +1,423 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(0, 0, 0, 0.85);
+  --menue-speed: 0.75s;
+}
+
+/* smartphones */
+
+@media (max-width:500px) {
+  .Menue {
+    display: none;
+  }
+
+  .small-screen {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+.menue{
+  background-color: var(--overlay-color);
+  animation: opac 3s ease-in-out ;
+}
+@keyframes opac {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+  .menue-wrap {
+    display: block;
+  }
+
+  body {
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 100%;
+    height: fit-content;
+
+  }
+
+  .header .container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .header .container nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .header .container .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home .container .primary-text {
+    font-size: 3em;
+  }
+
+  .categories .container {
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "food cinema cinema"
+      "wedding wedding kids"
+      "comercial cars cars"
+      "realestate events design"
+    ;
+
+/* links  */
+
+
+
+
+
+  }
+
+  .img-1,
+  .a-1 {
+    /* grid-column: 1/span 1;
+  grid-row: 1/span 2; */
+    grid-area: food;
+
+  }
+
+  .img-2,
+  .a-2 {
+    /* grid-column: 2/span 2;
+  grid-row: 1/span 2; */
+    grid-area: cinema;
+  }
+
+  .img-3,
+  .a-3 {
+    /* grid-column: 2/span 2;
+  grid-row: 9/span 5; */
+    grid-area: wedding;
+  }
+
+  .img-4,
+  .a-4 {
+    /* grid-column: 2/span 2;
+  grid-row: 9/span 5; */
+    grid-area: kids;
+  }
+
+  .img-5,
+  .a-5 {
+    grid-area: comercial;
+  }
+
+  .img-6,
+  .a-6 {
+    grid-area: cars;
+  }
+
+  .img-9,
+  .a-9 {
+    grid-area: realestate;
+  }
+
+  .img-8,
+  .a-8 {
+    grid-area: design;
+  }
+
+  .img-7,
+  .a-7 {
+    grid-area: events;
+  }
+
+  .article {
+    flex-direction: column;
+  }
+
+  .services .container .part-1 .container2 {
+    flex-direction: column;
+  }
+
+  .services .container .paragraph button {
+    margin-bottom: 2vh;
+  }
+
+  .footer .container {
+    font-size: .7rem;
+    justify-content: center;
+  }
+
+/* about */
+.who-we-are{
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+
+}
+.who-we-are .container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 150vh;
+padding: 0;
+margin: 0;
+
+}
+
+.who-we-are .container .left-side {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.who-we-are .container .right-side {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.about-us .container h1 {
+  font-size: 4.2rem;
+}
+
+
+/* about us */
+.contact-us .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+
+/* background home settings  */
+/* #home {
+  position: relative;
+  color: white;
+  height: 100vh;
+
+}
+
+#home::before {
+  content: '';
+  background: url('../imgs/Wedding.png') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  height: 100%;
+}
+ */
+
+/* Hamburger Menue */
+.menue-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menue-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+
+}
+
+.menue-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: var(--primary-color-menu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger 3 lines  */
+.menue-wrap .hamburger>div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+
+}
+
+/* Hamburger Lines -top & Bottom */
+.menue-wrap .hamburger>div::before,
+.menue-wrap .hamburger>div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menue-wrap .hamburger>div::after {
+  top: 10px;
+}
+
+/* Toggler animation */
+.menue-wrap .toggler:checked+.hamburger>div {
+  transform: rotate(135deg);
+
+}
+
+/* Turns Lines to X  */
+.menue-wrap .toggler:checked+.hamburger>div::after,
+.menue-wrap .toggler:checked+.hamburger>div::before {
+  top: 0;
+  transform: rotate(90deg);
+
+}
+
+
+/* Rotate on hove when checked  */
+.menue-wrap .toggler:checked:hover+.hamburger>div {
+  transform: rotate(360deg);
+}
+
+/* show the menue */
+.menue-wrap .toggler:checked~.menue {
+  visibility: visible;
+}
+
+.menue-wrap .toggler:checked~.menue>div {
+  transform: scale(1);
+  text-decoration: var(--menue-speed);
+  height: 500vw;
+  transition: all 0.4s ease;
+
+
+
+}
+
+.menue-wrap .toggler:checked~.menue>div>div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+
+
+
+
+
+.menue-wrap .menue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.menue-wrap .menue>div {
+  background-color: var(--overlay-color);
+
+  width: 100vw;
+  height: 0;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+
+  transition: all 0.4s ease;
+}
+
+.menue-wrap .menue>div>div {
+  text-align: center;
+  max-width: 90w;
+  max-height: 100vh;
+  opacity: 0;
+  transform: opacity 0.4 ease;
+
+}
+
+.menue-wrap .menue>div>div>ul>li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+}
+
+.menue-wrap .menue>div>div>ul>li>a {
+  color: inherit;
+  text-decoration: none;
+
+
+}
+
+.menue-wrap .menue>div>div>ul>li>a:hover {
+
+  color: var(--secondary-color);
+}
+
+}

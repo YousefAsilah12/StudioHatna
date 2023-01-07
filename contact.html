@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1c32b68933.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Studiohatna</title>
+  <link rel="icon" sizes="48x48" type="image/png" href="/imgs/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Staatliches&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/css/mobile.css">
+
+
+</head>
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById("spinner").style.display = "none";
+    }, 1000); // 5 seconds
+  }
+</script>
+
+<body id="body" class="body">
+  <div id="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+  
+   <!-- header & Nav -->
+   <header class="header">
+    <div class="container">
+      <div class="small-screen">
+        <div class="logo">
+          <a href="/index.html " class="">
+            <img src="/imgs/lastsmalllogo.png" alt="studioHatna logo" width="50px">
+          </a>
+        </div>
+  
+        <div class="menue-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menue">
+            <nav class="navbar">
+              <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+              <a href="/index.html#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+              <a href="/index.html#services" class="services border"><span class="S-color">S</span>ervices</a>
+              <a href="about.html" class="about border">About</a>
+              <a href="/index.html#links" class="contact border">links</span></a>
+              <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+            </nav>
+          </div>
+    
+        </div>
+  
+    
+      </div>
+
+      <div class="Menue">
+        <nav class="navbar">
+          <a href="/index.html" class=" current border"><span class="H-color">H</span>ome</a>
+          <a href="/index.html#categories" class="Categories border"> <span class="c-color">C</span>ategories</a>
+          <a href="/index.html#services" class="services border"><span class="S-color">S</span>ervices</a>
+          <a href="about.html" class="about border">About</a>
+          <a href="/index.html#links" class="contact border">links</span></a>
+          <a href="/contact.html" class="contact border">Contac<span class="T-color">t</span></a>
+</nav>
+      </div>
+
+
+
+    </div>
+  </header>
+
+  <main class="main-contact">
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="right">
+          <div class="container">
+            <div class="border">
+              <h1>info</h1>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>studioHatna@gmail.com</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>052 555-5555</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-clock"></i>
+                <p>09:00 Am - 1:00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <form action="send.php" class="form " id="form">
+            <div class="form-container">
+              <label for="name form-group">first Name</label>
+              <input class="form-group" type="text" name="name" id="name" placeholder="Enter first name">
+
+              <label for="last-name">Last Name</label>
+              <input class="form-group" type="text" name="last-name" id="last-name" placeholder="Enter last name">
+
+              <label for="name">Email</label>
+              <input class="form-group" type="email" name="name" id="name" placeholder="Enter Your Mail">
+
+              <label for="name">Phone</label>
+              <input class="form-group" type="text" name="name" id="name" placeholder="Enter Your Phone" maxlength="10"
+                minlength="10">
+
+              <div class="submit">
+                <label for="submit"> </label>
+                <button type="submit"  id="btn-submit" class="btn-submit">send info</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- our info  -->
+    <section class="our-info">
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>all copyright &copy; return to studioHatna (Yousef Asilah) </p>
+      <div class="social-links" id="links">
+        <a href="http://twitter.com " target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="http://instagram.com " target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="http://facebook.com " target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="http://youtube.com " target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="/js/lightbox.min.js"></script>
+  <script src="https://kit.fontawesome.com/1c32b68933.js" crossorigin="anonymous"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+</body>
+
+</html>
